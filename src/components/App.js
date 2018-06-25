@@ -1,11 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
+import '../App.css';
 
-import Footer from "./components/Footer";
-import AddTodo from "./containers/AddTodo";
-import VisibleTodoList from "./containers/VisibleTodoList";
-
+import Footer from './Footer'
+import AddTodo from '../containers/AddTodo'
+import VisibleTodoList from '../containers/VisibleTodoList'
 
 const App = () => (
   <div className="App">
@@ -19,6 +18,6 @@ const App = () => (
       <Footer />
     </div>
   </div>
-);
+)
 
-export default App;
+export default App

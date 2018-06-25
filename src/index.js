@@ -2,13 +2,10 @@ import React from "react";
 import { render } from "react-dom";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
+import rootReducer from "./reducers";
+import App from "./components/App";
 
-import todoApp from "./reducers";
-import App from "./App";
-import './index.css';
-import registerServiceWorker from './registerServiceWorker';
-
-const store = createStore(todoApp);
+const store = createStore(rootReducer);
 
 render(
   <Provider store={store}>
@@ -16,6 +13,3 @@ render(
   </Provider>,
   document.getElementById("root")
 );
-registerServiceWorker();
-
-
